@@ -1,0 +1,206 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.font {
+    font-family: Roboto;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23.44px;
+}
+.size2 {
+    font-size: 14px;
+    line-height: 16.41px;
+}
+.size3 {
+    font-size: 12px;
+    line-height: 14.06px;
+}
+.fontGray {
+    color: rgba(81, 81, 81, 1);
+}
+.weight2 {
+    font-weight: 400;
+}
+
+body {
+    background-color: rgba(249, 249, 249, 1);
+}
+
+header {
+    display: flex;
+    height: 3.5rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem;
+    background-color: #fff;
+
+    & .header-left {
+        display: flex;
+        justify-content: space-between;
+        width: 9.125rem;
+        height: 1.5rem;
+        align-items: center;
+    }
+
+    & .header-center {
+        display: flex;
+
+        & .rectangle1 {
+            width: 21.75rem;
+            height: 2.5rem;
+            border: 1px solid rgba(204, 204, 204, 1)
+        }
+
+        & .rectangle2 {
+            width: 3.563rem;
+            height: 2.5rem;
+            background: rgba(248, 248, 248, 1);
+            border: 1px solid rgba(204, 204, 204, 1);
+            display: flex;
+            align-items: center;
+            & svg {
+                margin-left: 25%;
+            }
+        }
+    }
+
+    & .header-right {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: fit-content;
+        height: fit-content;
+        gap: 24px;
+
+        & .avatar {
+            display: flex;
+            width: 2.125rem;
+            height: 2.125rem;
+            border-radius: 50%;
+            overflow: hidden;
+            background-color: rgb(230, 230, 230);
+            justify-content: center;
+            align-items: center;
+
+            & img {
+                width: inherit;
+                height: inherit;
+            }
+        }
+    }
+}
+
+main {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+article {
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;    
+    gap: 1rem;
+    top: 1.75rem;
+    left: 4.688rem;
+
+    & .video {
+        width: 99%;
+
+        & img {
+            width: inherit;
+        }
+    }
+
+    & .actions {
+        display: flex;
+        width: fit-content;
+        height: fit-content;
+        gap: 2.625rem;
+        align-items: center;
+
+        & .channelInfos {
+            display: flex;
+            width: fit-content;
+            height: fit-content;
+            gap: 0.75rem;
+            align-items: center;
+        }
+        & .subscribeButton {
+            width: 9.938rem;
+            height: 2.5rem;
+            border-radius: 2px;
+            background: rgba(204, 0, 0, 1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        & .like {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 3.938rem;
+            height: 1.5rem;
+        }
+        & .deslike {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 6.25rem;
+            height: 1.5rem;
+        }
+        & .share {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 7.188rem;
+            height: 1.5rem;
+        }
+        & .download {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 5.938rem;
+            height: 1.5rem;
+        }
+    }
+}
+
+aside {
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;    
+    top: 1.75rem;
+    gap: .5rem;
+    margin-left: 3rem;
+
+    & .aside-video {
+        display: flex;
+        gap: .5rem;
+
+        & .thumb {
+            width: calc(10rem * 0.9);
+            height: calc(5.625rem * 0.9);
+            
+            & img {
+                width: inherit;
+                height: inherit;
+            }
+        }
+        
+        & .infos {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 12.25rem;
+            flex-wrap: wrap;
+        }
+    }
+}
